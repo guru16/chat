@@ -12,6 +12,9 @@ class userRoutes{
      Usercontroller.uploadImage(req.body)
       
     })
+    router.get('/', function(req, res, next) {
+      res.render('index', { title: 'Express' });
+    });
    
     
   }
